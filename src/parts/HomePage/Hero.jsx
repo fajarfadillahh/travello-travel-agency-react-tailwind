@@ -20,15 +20,15 @@ export default function Hero() {
 
         <div className="hero__container container relative">
           {/* hero data */}
-          <div className="hero__data">
-            <h1 className="hero__title section-title text-[32px] text-white">
+          <div className="hero__data md:mx-auto md:max-w-2xl lg:max-w-3xl 2xl:max-w-5xl">
+            <h1 className="hero__title section-title text-[32px] text-white xs:text-[42px] sm:text-[52px] lg:text-[58px] 2xl:text-[64px]">
               Explore new places <br />
               with Travello
             </h1>
-            <p className="hero__text section-text pb-8 text-white">
+            <p className="hero__text section-text pb-8 text-white xs:max-w-md xl:max-w-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               dolore laboriosam necessitatibus eius perspiciatis debitis neque
-              quaerat.
+              amet consectetur adipisicing elit.
             </p>
             <Link to="/" className="hero__button button inline-flex">
               Get Started
