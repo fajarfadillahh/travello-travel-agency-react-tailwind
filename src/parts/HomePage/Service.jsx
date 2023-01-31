@@ -20,7 +20,7 @@ export default function Service() {
                   <h3 className="pb-2 font-serif text-[20px] font-semibold text-gray-900">
                     {item.title}
                   </h3>
-                  <p className="text-[15px] leading-[180%] text-gray-600">
+                  <p className="text-[15px] font-medium leading-[180%] text-gray-600">
                     {item.text}
                   </p>
                 </div>
