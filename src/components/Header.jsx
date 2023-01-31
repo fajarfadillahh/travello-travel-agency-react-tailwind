@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 // react icons
@@ -8,12 +8,31 @@ export default function Header() {
   // open menu state
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // sticky header state
+  const [stickyHeader, setStickyHeader] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 5) {
+        setStickyHeader(true);
+      } else {
+        setStickyHeader(false);
+      }
+    });
+  }, [stickyHeader]);
+
   return (
-    <header className="header fixed top-0 left-0 z-50 w-full">
+    <header
+      className={`header fixed top-0 left-0 z-50 w-full transition-all duration-400 ${
+        stickyHeader ? "bg-white shadow-md" : "bg-transparent shadow-none"
+      }`}
+    >
       <div className="header__container container flex h-24 items-center justify-between">
         <Link
           to="/"
-          className="header__logo font-serif text-[20px] font-semibold text-white"
+          className={`header__logo font-serif text-[20px] font-semibold ${
+            stickyHeader ? "text-gray-900" : "text-white"
+          }`}
         >
           Travello.
         </Link>
@@ -34,10 +53,16 @@ export default function Header() {
               <li key={url}>
                 <Link
                   to={url}
-                  className="header__link group relative text-[15px] font-medium leading-tight text-gray-900 md:text-white"
+                  className={`header__link group relative text-[15px] font-medium leading-tight text-gray-900 md:text-white ${
+                    stickyHeader ? "md:text-gray-900" : "md:text-white"
+                  }`}
                 >
                   {title}
-                  <div className="absolute top-6 left-0 h-[3px] w-0 bg-blue-600 transition-all duration-400 group-hover:w-full md:bg-white" />
+                  <div
+                    className={`absolute top-6 left-0 h-[3px] w-0 bg-blue-600 transition-all duration-400 group-hover:w-full ${
+                      stickyHeader ? "md:bg-blue-600" : "md:bg-white"
+                    }`}
+                  />
                 </Link>
               </li>
             ))}
@@ -53,7 +78,9 @@ export default function Header() {
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {!menuOpen ? (
-            <RiMenu3Fill className="text-white" />
+            <RiMenu3Fill
+              className={`${stickyHeader ? "text-gray-900" : "text-white"}`}
+            />
           ) : (
             <RiCloseFill className="text-gray-900" />
           )}
