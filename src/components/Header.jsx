@@ -13,14 +13,14 @@ export default function Header() {
       <div className="header__container container flex h-24 items-center justify-between">
         <Link
           to="/"
-          className="header__logo font-serif text-[20px] font-semibold text-gray-900"
+          className="header__logo font-serif text-[20px] font-semibold text-white"
         >
           Travello.
         </Link>
 
         <div
-          className={`header__menu fixed top-24 left-0 w-full origin-top bg-white py-8 px-16 text-center shadow-md transition-all duration-400 md:static md:top-0 md:flex md:w-auto md:scale-y-100 md:items-center md:gap-8 md:p-0 md:shadow-none ${
-            menuOpen ? "scale-y-100" : "scale-y-0"
+          className={`header__menu fixed top-0 -z-10 flex h-full w-[70%] flex-col justify-between bg-white px-10 pt-24 pb-10 transition-all duration-400 md:static md:z-auto md:h-auto md:w-auto md:flex-row md:items-center md:gap-8 md:bg-transparent md:p-0 ${
+            menuOpen ? "right-0" : "-right-full"
           }`}
         >
           <ul className="header__list mb-8 flex flex-col gap-8 md:mb-0 md:flex-row">
@@ -34,10 +34,10 @@ export default function Header() {
               <li key={url}>
                 <Link
                   to={url}
-                  className="header__link group relative text-[15px] font-medium leading-tight text-gray-900"
+                  className="header__link group relative text-[15px] font-medium leading-tight text-gray-900 md:text-white"
                 >
                   {title}
-                  <div className="absolute top-6 left-0 h-[3px] w-0 bg-blue-600 transition-all duration-400 group-hover:w-full" />
+                  <div className="absolute top-6 left-0 h-[3px] w-0 bg-blue-600 transition-all duration-400 group-hover:w-full md:bg-white" />
                 </Link>
               </li>
             ))}
@@ -49,10 +49,14 @@ export default function Header() {
         </div>
 
         <div
-          className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] text-gray-900 md:hidden"
+          className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {!menuOpen ? <RiMenu3Fill /> : <RiCloseFill />}
+          {!menuOpen ? (
+            <RiMenu3Fill className="text-white" />
+          ) : (
+            <RiCloseFill className="text-gray-900" />
+          )}
         </div>
       </div>
     </header>
