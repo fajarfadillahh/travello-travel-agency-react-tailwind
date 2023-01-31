@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="hero__container container relative">
           {/* hero data */}
           <div className="hero__data md:mx-auto md:max-w-2xl lg:max-w-3xl 2xl:max-w-5xl">
-            <h1 className="hero__title section-title text-[32px] text-white xs:text-[42px] sm:text-[52px] lg:text-[58px] 2xl:text-[64px]">
+            <h1 className="hero__title section-title text-white xs:text-[42px] sm:text-[52px] lg:text-[58px] 2xl:text-[64px]">
               Explore new places <br />
               with Travello
             </h1>
