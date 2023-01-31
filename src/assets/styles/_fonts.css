@@ -1,0 +1,36 @@
+/* Font: Poppins */
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  src: url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+/* Font: Playfair Display */
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 500;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-Medium.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-SemiBold.ttf")
+    format("truetype");
+}
