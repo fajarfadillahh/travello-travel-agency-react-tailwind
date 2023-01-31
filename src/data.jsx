@@ -8,21 +8,21 @@ export const serviceData = [
   {
     icons: ServiceIcon1,
     title: "Full Guide",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit eaque.",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo iste ratione vero repellat dicta harum modi placeat.",
   },
   {
     icons: ServiceIcon2,
     title: "Transport",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit eaque.",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo iste ratione vero repellat dicta harum modi placeat.",
   },
   {
     icons: ServiceIcon3,
     title: "Easy Book",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit eaque.",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo iste ratione vero repellat dicta harum modi placeat.",
   },
   {
     icons: ServiceIcon4,
     title: "Camp Fire",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit eaque.",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo iste ratione vero repellat dicta harum modi placeat.",
   },
 ];
