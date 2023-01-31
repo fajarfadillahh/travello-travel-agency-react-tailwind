@@ -38,7 +38,7 @@ export default function Header() {
         </Link>
 
         <div
-          className={`header__menu fixed top-0 -z-10 flex h-full w-[70%] flex-col justify-between bg-white px-10 pt-24 pb-10 transition-all duration-400 md:static md:z-auto md:h-auto md:w-auto md:flex-row md:items-center md:gap-8 md:bg-transparent md:p-0 ${
+          className={`header__menu fixed top-0 -z-10 flex h-full w-[70%] flex-col justify-between bg-white px-10 pt-24 pb-10 shadow-[0_-4px_12px_rgba(0,0,0,0.12)] transition-all duration-400 md:static md:z-auto md:h-auto md:w-auto md:flex-row md:items-center md:gap-8 md:bg-transparent md:p-0 md:shadow-none ${
             menuOpen ? "right-0" : "-right-full"
           }`}
         >
