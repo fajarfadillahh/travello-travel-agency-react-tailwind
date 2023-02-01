@@ -9,6 +9,7 @@ import Destinations from "../parts/HomePage/Destinations";
 import Review from "../components/Review";
 import Callback from "../components/Callback";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Review />
       <Callback />
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
