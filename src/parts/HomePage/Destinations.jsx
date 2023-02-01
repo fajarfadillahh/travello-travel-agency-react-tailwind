@@ -8,7 +8,7 @@ import DestinationCard from "../../components/DestinationCard";
 
 export default function Destinations() {
   return (
-    <section className="destinations section">
+    <section className="destinations section transition-all duration-400 dark:bg-gray-900">
       <div className="destinations__container container grid gap-12">
         <div className="destinations__data text-center">
           <p className="destinations__subtitle section-subtitle">
