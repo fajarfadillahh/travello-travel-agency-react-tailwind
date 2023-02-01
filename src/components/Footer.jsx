@@ -12,8 +12,8 @@ import {
 export default function Footer() {
   return (
     <footer className="footer bg-zinc-900 pt-24 pb-8">
-      <div className="footer__container container grid gap-24">
-        <div className="footer__group grid items-start gap-12">
+      <div className="footer__container container grid gap-24 2xl:mx-auto 2xl:max-w-5xl">
+        <div className="footer__group grid grid-cols-[repeat(auto-fit,minmax(160px,1fr))] items-start gap-12 lg:flex lg:justify-between lg:justify-items-center">
           <div className="footer__content">
             <Link
               to="/"
