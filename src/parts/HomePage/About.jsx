@@ -7,7 +7,7 @@ import AboutImg from "../../assets/images/about-img.png";
 
 export default function About() {
   return (
-    <section className="about section">
+    <section className="about section transition-all duration-400 dark:bg-gray-900">
       <div className="about__container container grid gap-12 xs:max-w-sm sm:max-w-md md:max-w-lg xl:max-w-4xl xl:grid-cols-2 xl:items-center 2xl:max-w-5xl">
         <div className="about__data">
           <p className="about__subtitle section-subtitle">About Us</p>

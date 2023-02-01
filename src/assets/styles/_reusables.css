@@ -4,13 +4,13 @@
     @apply pt-24 pb-16;
   }
   .section-subtitle {
-    @apply pb-4 font-serif text-[15px] font-semibold uppercase tracking-[3px] text-blue-600;
+    @apply pb-4 font-serif text-[15px] font-semibold uppercase tracking-[3px] text-blue-600 dark:text-white;
   }
   .section-title {
-    @apply pb-4 font-serif text-[32px] font-semibold leading-[150%] text-gray-900 sm:text-[42px];
+    @apply pb-4 font-serif text-[32px] font-semibold leading-[150%] text-gray-900 dark:text-white sm:text-[42px];
   }
   .section-text {
-    @apply text-[15px] font-medium leading-[180%] text-gray-600;
+    @apply text-[15px] font-medium leading-[180%] text-gray-600 dark:text-white;
   }
 
   /* button class */

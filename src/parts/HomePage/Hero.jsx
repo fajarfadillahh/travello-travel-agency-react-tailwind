@@ -6,7 +6,7 @@ import HeroImg from "../../assets/images/hero-img.png";
 
 export default function Hero() {
   return (
-    <section className="hero pb-16">
+    <section className="hero pb-16 transition-all duration-400 dark:bg-gray-900">
       <div className="hero__wrapper relative flex h-[90vh] items-center bg-pink-200">
         {/* hero img */}
         <img
