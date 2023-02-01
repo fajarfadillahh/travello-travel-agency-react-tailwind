@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 // react icons
-import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
+import {
+  RiMenu3Fill,
+  RiCloseFill,
+  RiMoonFill,
+  RiSunFill,
+} from "react-icons/ri";
 
 export default function Header() {
   // open menu state
@@ -68,22 +73,43 @@ export default function Header() {
             ))}
           </ul>
 
+          {/* header theme toggle [desktop version] */}
+          <div
+            className={`header__theme hidden cursor-pointer p-1 text-[1.3rem] md:flex ${
+              stickyHeader ? "text-gray-900" : "text-white"
+            }`}
+          >
+            <RiMoonFill />
+          </div>
+
           <Link to="/register" className="header__button button">
             Register
           </Link>
         </div>
 
-        <div
-          className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem] md:hidden"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {!menuOpen ? (
-            <RiMenu3Fill
-              className={`${stickyHeader ? "text-gray-900" : "text-white"}`}
-            />
-          ) : (
-            <RiCloseFill className="text-gray-900" />
-          )}
+        <div className="header__wrapper inline-flex items-center gap-5 md:hidden">
+          {/* header theme toggle [mobile version] */}
+          <div
+            className={`header__theme cursor-pointer p-1 text-[1.3rem] ${
+              stickyHeader ? "text-gray-900" : "text-white"
+            }`}
+          >
+            <RiMoonFill />
+          </div>
+
+          {/* header menu toggle */}
+          <div
+            className="header__toggle inline-flex cursor-pointer p-1 text-[1.3rem]"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {!menuOpen ? (
+              <RiMenu3Fill
+                className={`${stickyHeader ? "text-gray-900" : "text-white"}`}
+              />
+            ) : (
+              <RiCloseFill className="text-gray-900" />
+            )}
+          </div>
         </div>
       </div>
     </header>
