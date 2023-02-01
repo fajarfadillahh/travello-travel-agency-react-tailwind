@@ -2,7 +2,7 @@ import React from "react";
 
 export default function DestinationCard({ image, title, text }) {
   return (
-    <div className="group relative h-[360px] w-full overflow-hidden">
+    <div className="group relative h-[400px] overflow-hidden">
       <img
         src={image}
         alt="destination img"
