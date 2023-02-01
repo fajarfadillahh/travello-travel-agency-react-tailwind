@@ -21,7 +21,7 @@ export default function Callback() {
         <div className="absolute top-0 left-0 h-full w-full bg-gray-900/30" />
 
         <div className="callback__container container">
-          <div className="callback__data relative text-center">
+          <div className="callback__data relative text-center xs:mx-auto xs:max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
             <p className="callback__subtitle section-subtitle text-white">
               Let's talk
             </p>
