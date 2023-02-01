@@ -1,0 +1,39 @@
+import React from "react";
+
+// import destination data
+import { destinationData } from "../../data";
+
+// import destination card
+import DestinationCard from "../../components/DestinationCard";
+
+export default function Destinations() {
+  return (
+    <section className="destinations section">
+      <div className="destinations__container container grid gap-12">
+        <div className="destinations__data text-center">
+          <p className="destinations__subtitle section-subtitle">
+            Best Destinations
+          </p>
+          <h1 className="destinations__title section-title">
+            Explore the best places with us
+          </h1>
+        </div>
+
+        <div className="destinations__group grid grid-cols-[0.8fr] justify-center gap-12">
+          {/* destination card */}
+          {destinationData.map((item, index) => {
+            return (
+              <div key={index}>
+                <DestinationCard
+                  image={item.image}
+                  title={item.title}
+                  text={item.text}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
