@@ -1,0 +1,4 @@
+/* ::-webkit-scrollbar */
+::-webkit-scrollbar {
+  @apply hidden;
+}
