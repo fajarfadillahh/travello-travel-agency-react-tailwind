@@ -8,6 +8,7 @@ import Service from "../parts/HomePage/Service";
 import Destinations from "../parts/HomePage/Destinations";
 import Review from "../components/Review";
 import Callback from "../components/Callback";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Destinations />
       <Review />
       <Callback />
+      <Footer />
     </>
   );
 }

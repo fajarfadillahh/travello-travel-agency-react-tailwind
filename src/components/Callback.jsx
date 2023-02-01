@@ -9,7 +9,7 @@ import CallbackImg from "../assets/images/callback-img.png";
 
 export default function Callback() {
   return (
-    <section className="callback section">
+    <section className="callback pt-24">
       <div className="callback__wrapper relative flex h-[640px] items-center">
         <img
           src={CallbackImg}
