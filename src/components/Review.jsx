@@ -6,7 +6,7 @@ import ReviewImg from "../assets/images/review-img.png";
 
 export default function Review() {
   return (
-    <section className="review section">
+    <section className="review section transition-all duration-400 dark:bg-gray-900">
       <div className="review__container container grid gap-12 xs:max-w-sm sm:max-w-md md:max-w-lg xl:max-w-4xl xl:grid-cols-2 xl:items-center 2xl:max-w-5xl">
         <div className="review__data">
           <p className="review__subtitle section-subtitle">Whay they say</p>
